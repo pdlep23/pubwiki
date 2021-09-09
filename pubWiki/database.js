@@ -1,8 +1,8 @@
 const mongoose = require("mongoose");
-
+const mySecret = process.env['mongoDBURL']
 mongoose.connect(
   
-'mongoDBurl'
+mySecret
 ,
   {
     useNewUrlParser: true,
